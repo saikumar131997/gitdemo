@@ -14,7 +14,7 @@ public with sharing class FileUploaderClass {
   public static String uploadFile(String base64, String filename, String recordId) {
         ContentVersion cv = createContentVersion(base64, filename);
         ContentDocumentLink cdl = createContentLink(cv.Id, recordId);
-        if (cv == null || cdl == null) { return null; }//testcard
+        if (cv == null || cdl == null) { return null; }
         return cdl.Id;
   }
   /*
