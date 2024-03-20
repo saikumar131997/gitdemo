@@ -31,7 +31,7 @@ public with sharing class FileUploaderClass {
     ContentVersion cv = new ContentVersion();
     cv.VersionData = EncodingUtil.base64Decode(base64);
     cv.Title = filename;
-    cv.PathOnClient = filename;
+    cv.PathOnClient = filename;//testcard
     try {
       insert cv;
       return cv;
